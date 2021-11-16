@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.begers.singletondesignpatterns.singleton.BillPughSingleton;
 import com.begers.singletondesignpatterns.singleton.EagerInitializationSingleton;
 import com.begers.singletondesignpatterns.singleton.LazySingleton;
 import com.begers.singletondesignpatterns.singleton.StaticBlockSingleton;
@@ -23,5 +24,7 @@ public class MainActivity extends AppCompatActivity {
         LazySingleton.getInstance().singletonTest();
 
         ThreadSafeSingleton.getInstance().singletonTest();
+
+        BillPughSingleton.getInstance().singletonTest();
     }
 }
