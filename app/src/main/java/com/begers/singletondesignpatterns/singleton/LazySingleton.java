@@ -1,6 +1,7 @@
 package com.begers.singletondesignpatterns.singleton;
 
 public class LazySingleton {
+
     private static LazySingleton lazySingleton;
 
     private LazySingleton() {

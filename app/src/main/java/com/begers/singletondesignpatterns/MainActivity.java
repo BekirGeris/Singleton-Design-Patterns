@@ -7,6 +7,7 @@ import android.os.Bundle;
 import com.begers.singletondesignpatterns.singleton.EagerInitializationSingleton;
 import com.begers.singletondesignpatterns.singleton.LazySingleton;
 import com.begers.singletondesignpatterns.singleton.StaticBlockSingleton;
+import com.begers.singletondesignpatterns.singleton.ThreadSafeSingleton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,5 +22,6 @@ public class MainActivity extends AppCompatActivity {
 
         LazySingleton.getInstance().singletonTest();
 
+        ThreadSafeSingleton.getInstance().singletonTest();
     }
 }
